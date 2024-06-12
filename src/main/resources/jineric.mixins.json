@@ -1,0 +1,19 @@
+{
+   "required": true,
+   "minVersion": "0.8",
+   "package": "net.jineric.optifine.mixin",
+   "compatibilityLevel": "JAVA_17",
+   "mixins": [
+   ],
+   "client": [
+	  "GameOptionsScreen",
+	  "ModifyVideoOptionsScreenMixin",
+	  "ZoomMixin",
+	  "accessors.GameOptionsAccessors",
+	  "options.CloudsHeightMixin",
+	  "options.SkyEnabledMixin"
+   ],
+   "injectors": {
+	  "defaultRequire": 1
+   }
+}

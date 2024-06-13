@@ -20,6 +20,5 @@ public class OptiFineOptionsScreen extends GameOptionsScreen {
    protected void init() {
       this.addDrawableChild(GameOptionsOF.getCloudsHeightOF().createWidget(this.gameOptions, this.width / 2, this.height / 2, 150));
       this.addDrawableChild(GameOptionsOF.getSkyEnabled().createWidget(this.gameOptions, this.width / 2 , this.height / 2 + 30, 150));
-      this.addDrawableChild(GameOptionsOF.getCloudsEnabled().createWidget(this.gameOptions, this.width / 2 , this.height / 2 - 30, 150));
    }
 }

@@ -2,7 +2,7 @@ package net.jineric.optilite.option;
 
 import net.minecraft.text.Text;
 
-public class GameOptionTexts {
+public class GameOptionTooltips {
 
    protected static final Text TREES = Text.translatable("optilite.options.trees.tooltip");
    protected static final Text RAIN_SNOW_TOOLTIP = Text.translatable("optilite.options.rainSnow.tooltip");

@@ -74,7 +74,6 @@ public class GameOptionsOL {
    }
 
 
-
    private static final Text TEMP = Text.translatable("Temp Button...");
    private static final SimpleOption<Boolean> tempButton = SimpleOption.ofBoolean(TEMP.getString(), true);
    public static SimpleOption<Boolean> getTempButton() {

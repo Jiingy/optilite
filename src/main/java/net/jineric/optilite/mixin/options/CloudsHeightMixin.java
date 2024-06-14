@@ -1,6 +1,6 @@
 package net.jineric.optilite.mixin.options;
 
-import net.jineric.optilite.option.GameOptionsOF;
+import net.jineric.optilite.option.GameOptionsOL;
 import net.minecraft.client.render.WorldRenderer;
 import net.minecraft.resource.SynchronousResourceReloader;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,7 +15,7 @@ public abstract class CloudsHeightMixin implements SynchronousResourceReloader, 
            at = @At(value = "STORE"), ordinal = 6
    )
    private double renderSkyIfEnabled(double original) {
-      original += GameOptionsOF.getCloudsHeightOF().getValue() * 128;
+      original += GameOptionsOL.getCloudsHeight().getValue() * 128;
       return original;
    }
 }

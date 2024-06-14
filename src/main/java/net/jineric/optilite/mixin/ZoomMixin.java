@@ -20,7 +20,7 @@ public abstract class ZoomMixin implements AutoCloseable {
 //   private void setZoomActiveIfKeypress(Camera camera, float tickDelta, boolean changingFov, CallbackInfoReturnable<Double> cir) {
 //      boolean zoomActive = false;
 //      if (this.client.currentScreen == null) {
-//         zoomActive = GameOptionsOF.keyZoomOF.isPressed();
+//         zoomActive = GameOptionsOL.keyZoomOF.isPressed();
 //      }
 //
 //      if (zoomActive) {

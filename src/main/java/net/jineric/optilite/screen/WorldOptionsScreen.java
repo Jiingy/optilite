@@ -2,7 +2,7 @@ package net.jineric.optilite.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.jineric.optilite.option.GameOptionsOF;
+import net.jineric.optilite.option.GameOptionsOL;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
 import net.minecraft.client.option.GameOptions;
@@ -21,7 +21,7 @@ public class WorldOptionsScreen extends GameOptionsScreen {
       return new SimpleOption[] {
               gameOptions.getCloudRenderMode(),
               // fog
-              GameOptionsOF.getCloudsHeightOF(),
+              GameOptionsOL.getCloudsHeight(),
               // fog start
               // sun & moon
               // stars
@@ -41,8 +41,9 @@ public class WorldOptionsScreen extends GameOptionsScreen {
 
    @Override
    protected void addOptions() {
-
-      this.body.addAll(getOptions(this.gameOptions));
-      this.body.addSingleOptionEntry(this.gameOptions.getBiomeBlendRadius());
+      if (this.body != null) {
+         this.body.addAll(getOptions(this.gameOptions));
+         this.body.addSingleOptionEntry(this.gameOptions.getBiomeBlendRadius());
+      }
    }
 }

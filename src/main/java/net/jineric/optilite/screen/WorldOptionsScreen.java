@@ -25,12 +25,12 @@ public class WorldOptionsScreen extends GameOptionsScreen {
               // fog start
               // sun & moon
               // stars
-              // sky
+              GameOptionsOL.getSkyEnabled(),
               // swamp colors
               // rain & snow
               // better snow
               // alternate blocks
-              // entity shadows
+              gameOptions.getEntityShadows()
               // trees
               // better grass
               // translucent blocks

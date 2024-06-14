@@ -2,7 +2,7 @@ package net.jineric.optilite.config;
 
 public class ConfigOF {
    // Options
-   private static boolean SKY_ENABLED;
+   private static boolean SKY_ENABLED = true;
    // Particles
    private static final boolean EXPLOSION_PARTICLES = true;
 
@@ -40,7 +40,6 @@ public class ConfigOF {
 
    public static void setSkyEnabled(boolean skyEnabled) {
       SKY_ENABLED = skyEnabled;
-
    }
 
 //   public static void setDefaultValues() {

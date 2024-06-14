@@ -40,7 +40,8 @@ public class GameOptionsOL {
       return skyEnabled;
    }
 
-
+//   private static final Text _PARTICLE = Text.translatable("optilite.options.particle.");
+//   private static final SimpleOption<Boolean> ParticlesEnabled = SimpleOption.ofBoolean(_PARTICLE.getString(), true);
 
 // PARTICLE OPTIONS
    private static final Text ANGRY_VILLAGER_PARTICLE = Text.translatable("optilite.options.particle.angryVillager");
@@ -55,10 +56,59 @@ public class GameOptionsOL {
       return blockParticlesEnabled;
    }
 
+   private static final Text BLOCK_MARKER_PARTICLE = Text.translatable("optilite.options.particle.blockMarker");
+   private static final SimpleOption<Boolean> blockMarkerParticlesEnabled = SimpleOption.ofBoolean(BLOCK_MARKER_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getBlockMarkerParticlesEnabled() {
+      return blockMarkerParticlesEnabled;
+   }
+
    private static final Text BUBBLE_PARTICLE = Text.translatable("optilite.options.particle.bubble");
    private static final SimpleOption<Boolean> bubbleParticlesEnabled = SimpleOption.ofBoolean(BUBBLE_PARTICLE.getString(), true);
    public static SimpleOption<Boolean> getBubbleParticlesEnabled() {
       return bubbleParticlesEnabled;
+   }
+
+   private static final Text CLOUD_PARTICLE = Text.translatable("optilite.options.particle.cloud");
+   private static final SimpleOption<Boolean> cloudParticlesEnabled = SimpleOption.ofBoolean(CLOUD_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getCloudParticlesEnabled() {
+      return cloudParticlesEnabled;
+   }
+
+   private static final Text CRIT_PARTICLE = Text.translatable("optilite.options.particle.crit");
+   private static final SimpleOption<Boolean> critParticlesEnabled = SimpleOption.ofBoolean(CRIT_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getCritParticlesEnabled() {
+      return critParticlesEnabled;
+   }
+
+   private static final Text DAMAGE_INDICATOR_PARTICLE = Text.translatable("optilite.options.particle.damageIndicator");
+   private static final SimpleOption<Boolean> damageIndicatorParticlesEnabled = SimpleOption.ofBoolean(DAMAGE_INDICATOR_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getDamageIndicatorParticlesEnabled() {
+      return damageIndicatorParticlesEnabled;
+   }
+
+   private static final Text DRAGONS_BREATH_PARTICLE = Text.translatable("optilite.options.particle.dragonsBreath");
+   private static final SimpleOption<Boolean> dragonsBreathParticlesEnabled = SimpleOption.ofBoolean(DRAGONS_BREATH_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getDragonsBreathParticlesEnabled() {
+      return dragonsBreathParticlesEnabled;
+   }
+
+   // CAN MAYBE CONDENSE LAVA / WATER PARTICLES INTO ONE OPTION
+   private static final Text DRIPPING_LAVA_PARTICLE = Text.translatable("optilite.options.particle.drippingLava");
+   private static final SimpleOption<Boolean> drippingLavaParticlesEnabled = SimpleOption.ofBoolean(DRIPPING_LAVA_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getDrippingLavaParticlesEnabled() {
+      return drippingLavaParticlesEnabled;
+   }
+
+   private static final Text FALLING_LAVA_PARTICLE = Text.translatable("optilite.options.particle.fallingLava");
+   private static final SimpleOption<Boolean> fallingLavaParticlesEnabled = SimpleOption.ofBoolean(FALLING_LAVA_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getFallingLavaParticlesEnabled() {
+      return fallingLavaParticlesEnabled;
+   }
+
+   private static final Text LANDING_LAVA_PARTICLE = Text.translatable("optilite.options.particle.landingLava");
+   private static final SimpleOption<Boolean> landingLavaParticlesEnabled = SimpleOption.ofBoolean(LANDING_LAVA_PARTICLE.getString(), true);
+   public static SimpleOption<Boolean> getLandingLavaParticlesEnabled() {
+      return landingLavaParticlesEnabled;
    }
 
    private static final Text EXPLOSION_PARTICLE = Text.translatable("optilite.options.particle.explosion");

@@ -11,8 +11,15 @@ import java.util.List;
 public class ParticleOption {
    private final SimpleOption<Boolean> simpleOption;
 
-   public ParticleOption(SimpleOption<Boolean> booleanSimpleOption) {
+   private final ParticleType<?> particleType;
+
+   public ParticleType<?> getParticleType() {
+      return particleType;
+   }
+
+   public ParticleOption(SimpleOption<Boolean> booleanSimpleOption, ParticleType<?> particleType) {
       this.simpleOption = booleanSimpleOption;
+      this.particleType = particleType;
    }
 
    public SimpleOption<?> getParticleOption() {

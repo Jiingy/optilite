@@ -5,10 +5,20 @@
    "optilite.options.player": "Player...",
    "optilite.options.animations": "Animations...",
    "optilite.options.other": "Other...",
+
    "optilite.options.shadersTitle": "Shaders Settings",
    "optilite.options.performanceTitle": "Performance Settings",
    "optilite.options.worldTitle": "World Settings",
    "optilite.options.playerTitle": "Player Settings",
    "optilite.options.animationsTitle": "Animations Settings",
-   "optilite.options.otherTitle": "Other Settings"
+   "optilite.options.otherTitle": "Other Settings",
+
+   "optilite.options.cloudHeight": "Cloud Height",
+   "optilite.options.sky": "Sky",
+
+   "optilite.options.particle.angryVillager": "Angry Villager",
+   "optilite.options.particle.block": "Block",
+   "optilite.options.particle.bubble": "Bubble",
+   "optilite.options.particle.explosion": "Explosion",
+   "optilite.options.particle.smoke": "Smoke"
 }

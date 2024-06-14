@@ -9,7 +9,6 @@ import net.minecraft.text.Text;
 
 public class AnimationsOptionsScreen extends GameOptionsScreen {
    public static final Text TITLE_TEXT = Text.translatable("optilite.options.animationsTitle");
-   private OptionListWidget list;
 
    public AnimationsOptionsScreen(Screen parent, GameOptions gameOptions) {
       super(parent, gameOptions, TITLE_TEXT);
@@ -17,9 +16,10 @@ public class AnimationsOptionsScreen extends GameOptionsScreen {
 
    @Override
    protected void addOptions() {
-      this.list = (OptionListWidget)this.addDrawableChild(new OptionListWidget(this.client, this.width, this));
       for (ParticleOption particleOption : ParticleOption.getAllParticleOptions()) {
-         this.list.addSingleOptionEntry(particleOption.getParticleOption());
+         if (this.body != null) {
+            this.body.addSingleOptionEntry(particleOption.getParticleOption());
+         }
       }
    }
 }

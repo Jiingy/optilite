@@ -30,9 +30,11 @@ public abstract class ParticleTogglesMixin implements SynchronousResourceReloade
    private void spawnParticlesOnlyIfEnabled(ParticleEffect particleEffect, boolean alwaysSpawn, boolean canSpawnOnMinimal, double x, double y, double z, double velocityX, double velocityY, double velocityZ, CallbackInfoReturnable<Particle> cir) {
       Camera camera = this.client.gameRenderer.getCamera();
       if (this.client != null && camera.isReady() && this.client.particleManager != null) {
-         for (ParticleOption particleOption : ParticleOption.getAllParticleOptions()) {
-            boolean particleOptionValue = particleOption.getParticleOptionValue();
-            ParticleType<?> particleType = particleOption.getParticleType();
+         for (ParticleType<?> particleType : ParticleOption.getParticleTypes()) {
+            boolean particleOptionValue = true;
+            for (ParticleOption particleOption : ParticleOption.getAllParticleOptions()) {
+               particleOptionValue = particleOption.getParticleOptionValue();
+            }
             if (particleEffect == particleType && !particleOptionValue) {
                cir.setReturnValue(null);
             }

@@ -13,7 +13,7 @@ import net.minecraft.util.math.MathHelper;
 public class GameOptionsOF {
 // private static final Text  = Text.translatable("optilite.options..tooltip");
 
-   private static final Text CLOUD_HEIGHT = Text.translatable("optilite.options.cloudHeight.tooltip");
+   private static final Text CLOUD_HEIGHT = Text.translatable("optilite.options.cloudHeight");
    private static final SimpleOption<Double> cloudsHeightOF = new SimpleOption<>(
            "optilite.options.cloud_height",
            SimpleOption.constantTooltip(CLOUD_HEIGHT),
@@ -27,7 +27,7 @@ public class GameOptionsOF {
       return cloudsHeightOF;
    }
 
-   private static final Text SKY_TOOLTIP = Text.translatable("optilite.options.sky.tooltip");
+   private static final Text SKY_TOOLTIP = Text.translatable("optilite.options.sky");
    private static final SimpleOption<Boolean> skyEnabled = SimpleOption.ofBoolean(SKY_TOOLTIP.getString(), true);
    public static SimpleOption<Boolean> getSkyEnabled() {
       return skyEnabled;
@@ -36,31 +36,31 @@ public class GameOptionsOF {
 
 
 // PARTICLE OPTIONS
-   private static final Text ANGRY_VILLAGER_PARTICLE_TOOLTIP = Text.translatable("optilite");
+   private static final Text ANGRY_VILLAGER_PARTICLE_TOOLTIP = Text.translatable("optilite.options.particle.angryVillager");
    private static final SimpleOption<Boolean> angryVillagerParticlesEnabled = SimpleOption.ofBoolean(ANGRY_VILLAGER_PARTICLE_TOOLTIP.getString(), true);
    public static SimpleOption<Boolean> getAngryVillagerParticlesEnabled() {
       return angryVillagerParticlesEnabled;
    }
 
-   private static final Text BLOCK_PARTICLE_TOOLTIP = Text.translatable("BLOCK");
+   private static final Text BLOCK_PARTICLE_TOOLTIP = Text.translatable("optilite.options.particle.block");
    private static final SimpleOption<Boolean> blockParticlesEnabled = SimpleOption.ofBoolean(BLOCK_PARTICLE_TOOLTIP.getString(), true);
    public static SimpleOption<Boolean> getBlockParticlesEnabled() {
       return blockParticlesEnabled;
    }
 
-   private static final Text BUBBLE_PARTICLE_TOOLTIP = Text.translatable("BUBBLE");
+   private static final Text BUBBLE_PARTICLE_TOOLTIP = Text.translatable("optilite.options.particle.bubble");
    private static final SimpleOption<Boolean> bubbleParticlesEnabled = SimpleOption.ofBoolean(BUBBLE_PARTICLE_TOOLTIP.getString(), true);
    public static SimpleOption<Boolean> getBubbleParticlesEnabled() {
       return bubbleParticlesEnabled;
    }
 
-   private static final Text EXPLOSION_PARTICLE_TOOLTIP = Text.translatable("EXPLOSION");
+   private static final Text EXPLOSION_PARTICLE_TOOLTIP = Text.translatable("optilite.options.particle.explosion");
    private static final SimpleOption<Boolean> explosionParticlesEnabled = SimpleOption.ofBoolean(EXPLOSION_PARTICLE_TOOLTIP.getString(), true);
    public static SimpleOption<Boolean> getExplosionParticlesEnabled() {
       return explosionParticlesEnabled;
    }
 
-   private static final Text SMOKE_PARTICLE_TOOLTIP = Text.translatable("SMOKE");
+   private static final Text SMOKE_PARTICLE_TOOLTIP = Text.translatable("optilite.options.particle.smoke");
    private static final SimpleOption<Boolean> smokeParticlesEnabled = SimpleOption.ofBoolean(SMOKE_PARTICLE_TOOLTIP.getString(), true);
    public static SimpleOption<Boolean> getSmokeParticlesEnabled() {
       return smokeParticlesEnabled;

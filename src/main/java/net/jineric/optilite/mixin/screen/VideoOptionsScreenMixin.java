@@ -21,7 +21,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(VideoOptionsScreen.class)
-public abstract class OptiFineVideoOptionsScreenMixin extends GameOptionsScreen {
+public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
    private static final Text TEMP_BUTTON_TEXT = Text.translatable("Temp...");
 
    private static final Text ANIMATIONS_TEXT = Text.translatable("optilite.options.animations");
@@ -30,7 +30,7 @@ public abstract class OptiFineVideoOptionsScreenMixin extends GameOptionsScreen 
    private static final Text WORLD_TEXT = Text.translatable("optilite.options.world");
 
 
-   public OptiFineVideoOptionsScreenMixin(Screen parent, GameOptions gameOptions, Text title) {
+   public VideoOptionsScreenMixin(Screen parent, GameOptions gameOptions, Text title) {
       super(parent, gameOptions, title);
    }
 

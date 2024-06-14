@@ -42,8 +42,8 @@ public class WorldOptionsScreen extends GameOptionsScreen {
    @Override
    protected void addOptions() {
       if (this.body != null) {
-         this.body.addAll(getOptions(this.gameOptions));
          this.body.addSingleOptionEntry(this.gameOptions.getBiomeBlendRadius());
+         this.body.addAll(getOptions(this.gameOptions));
       }
    }
 }

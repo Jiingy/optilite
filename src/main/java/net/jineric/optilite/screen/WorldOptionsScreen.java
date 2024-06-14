@@ -25,7 +25,7 @@ public class WorldOptionsScreen extends GameOptionsScreen {
               // fog start
               // sun & moon
               // stars
-              GameOptionsOF.getCloudsHeightOF(),
+              // sky
               // swamp colors
               // rain & snow
               // better snow

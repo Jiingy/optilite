@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "jineric",
+  "id": "optilite",
   "version": "${version}",
-  "name": "OptiFine",
-  "description": "OptiFine for Fabric",
+  "name": "OptiLite",
+  "description": "All the QoL feature from OptiFine, for Fabric",
   "authors": [
-    "Jiingy"
+    "Jingy"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -13,12 +13,12 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/optifine/icon.png",
+  "icon": "assets/optilite/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-	   "net.jineric.optifine.OptiFine"
+	   "net.jineric.optilite.OptiLite"
     ]
   },
   "mixins": [

@@ -1,8 +1,8 @@
-package net.jineric.optifine;
+package net.jineric.optilite;
 
 import net.fabricmc.api.ModInitializer;
 
-public class OptiFine implements ModInitializer {
+public class OptiLite implements ModInitializer {
 
 	@Override
 	public void onInitialize() {

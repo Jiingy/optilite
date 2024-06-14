@@ -1,7 +1,6 @@
-package net.jineric.optifine.mixin.options;
+package net.jineric.optilite.mixin.options;
 
-import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import net.jineric.optifine.option.GameOptionsOF;
+import net.jineric.optilite.option.GameOptionsOF;
 import net.minecraft.client.render.WorldRenderer;
 import net.minecraft.resource.SynchronousResourceReloader;
 import org.spongepowered.asm.mixin.Mixin;

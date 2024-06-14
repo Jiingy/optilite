@@ -1,0 +1,14 @@
+{
+   "optilite.options.shaders": "Shaders...",
+   "optilite.options.performance": "Performance...",
+   "optilite.options.world": "World...",
+   "optilite.options.player": "Player...",
+   "optilite.options.animations": "Animations...",
+   "optilite.options.other": "Other...",
+   "optilite.options.shadersTitle": "Shaders Settings",
+   "optilite.options.performanceTitle": "Performance Settings",
+   "optilite.options.worldTitle": "World Settings",
+   "optilite.options.playerTitle": "Player Settings",
+   "optilite.options.animationsTitle": "Animations Settings",
+   "optilite.options.otherTitle": "Other Settings"
+}

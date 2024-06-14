@@ -1,9 +1,8 @@
-package net.jineric.optifine.mixin.accessors;
+package net.jineric.optilite.mixin.accessors;
 
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(GameOptions.class)

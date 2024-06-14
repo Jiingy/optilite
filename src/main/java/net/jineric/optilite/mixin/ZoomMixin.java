@@ -1,4 +1,4 @@
-package net.jineric.optifine.mixin;
+package net.jineric.optilite.mixin;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.GameRenderer;

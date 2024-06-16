@@ -1,8 +1,10 @@
 package net.jineric.optilite.config;
 
+import net.jineric.optilite.option.GameOptionsOL;
+
 public class ConfigOF {
    // Options
-   private static boolean SKY_ENABLED = true;
+   private static boolean SKY_ENABLED = GameOptionsOL.getSky().getValue();
    // Particles
    private static final boolean EXPLOSION_PARTICLES = true;
 

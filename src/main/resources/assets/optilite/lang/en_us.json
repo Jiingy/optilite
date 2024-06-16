@@ -15,7 +15,8 @@
 
    "optilite.options.cloudHeight": "Cloud Height",
    "optilite.options.sky": "Sky",
-
+   "optilite.options.sunMoon": "Sun & Moon",
+   "optilite.options.stars": "Stars",
    "optilite.options.particle.angryVillager": "Angry Villager",
    "optilite.options.particle.block": "Block",
    "optilite.options.particle.bubble": "Bubble",

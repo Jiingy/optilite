@@ -6,12 +6,14 @@
    "mixins": [
    ],
    "client": [
-	  "screen.VideoOptionsScreenMixin",
-	  "options.ParticleTogglesMixin",
 	  "ZoomMixin",
 	  "accessors.GameOptionsAccessors",
 	  "options.CloudsHeightMixin",
-	  "options.SkyEnabledMixin"
+	  "options.ParticleTogglesMixin",
+	  "options.SkyEnabledMixin",
+	  "options.StarsToggleMixin",
+	  "options.SunMoonToggleMixin",
+	  "screen.VideoOptionsScreenMixin"
    ],
    "injectors": {
 	  "defaultRequire": 1

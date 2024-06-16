@@ -14,16 +14,16 @@ public class GameOptionsOL {
 // private static final Text  = Text.translatable("optilite.options..tooltip");
 
    // TODO: Tie-in with GameOptions.getAdvancedTooltips
-   private static final Text ADVANCED_TOOLTIPS = Text.translatable("optilite.options.advancedTooltips");
-   private static final SimpleOption<Boolean> advancedTooltips = SimpleOption.ofBoolean(ADVANCED_TOOLTIPS.getString(), false);
+   private static final Text ADVANCED_TOOLTIPS_TEXT = Text.translatable("optilite.options.advancedTooltips");
+   private static final SimpleOption<Boolean> ADVANCED_TOOLTIPS = SimpleOption.ofBoolean(ADVANCED_TOOLTIPS_TEXT.getString(), false);
    public static SimpleOption<Boolean> getAdvancedTooltips() {
-      return advancedTooltips;
+      return ADVANCED_TOOLTIPS;
    }
 
-   private static final Text CLOUD_HEIGHT = Text.translatable("optilite.options.cloudHeight");
-   private static final SimpleOption<Double> cloudsHeight = new SimpleOption<>(
+   private static final Text CLOUD_HEIGHT_TEXT = Text.translatable("optilite.options.cloudHeight");
+   private static final SimpleOption<Double> CLOUD_HEIGHT = new SimpleOption<>(
            "optilite.options.cloudHeight",
-           SimpleOption.constantTooltip(CLOUD_HEIGHT),
+           SimpleOption.constantTooltip(CLOUD_HEIGHT_TEXT),
            (optionText, value) -> value == 0.0
                    ? GameOptions.getGenericValueText(optionText, ScreenTexts.OFF)
                    : GameOptionsAccessors.getPercentValueText(optionText, value),
@@ -31,13 +31,26 @@ public class GameOptionsOL {
            0.0, value -> {}
    );
    public static SimpleOption<Double> getCloudsHeight() {
-      return cloudsHeight;
+      return CLOUD_HEIGHT;
    }
 
-   private static final Text SKY = Text.translatable("optilite.options.sky");
-   private static final SimpleOption<Boolean> skyEnabled = SimpleOption.ofBoolean(SKY.getString(), true);
-   public static SimpleOption<Boolean> getSkyEnabled() {
-      return skyEnabled;
+   private static final Text SKY_TEXT = Text.translatable("optilite.options.sky");
+   private static final SimpleOption<Boolean> SKY = SimpleOption.ofBoolean(SKY_TEXT.getString(), true);
+   public static SimpleOption<Boolean> getSky() {
+      return SKY;
+   }
+
+   // TODO: SPLIT INTO SEPARATE SETTINGS?
+   private static final Text SUN_MOON_TEXT = Text.translatable("optilite.options.sunMoon");
+   private static final SimpleOption<Boolean> SUN_MOON = SimpleOption.ofBoolean(SUN_MOON_TEXT.getString(), true);
+   public static SimpleOption<Boolean> getSunMoon() {
+      return SUN_MOON;
+   }
+
+   private static final Text STARS_TEXT = Text.translatable("optilite.options.stars");
+   private static final SimpleOption<Boolean> STARS = SimpleOption.ofBoolean(STARS_TEXT.getString(), true);
+   public static SimpleOption<Boolean> getStars() {
+      return STARS;
    }
 
 //   private static final Text _PARTICLE = Text.translatable("optilite.options.particle.");

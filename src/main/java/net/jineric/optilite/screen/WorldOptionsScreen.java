@@ -9,6 +9,8 @@ import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.SimpleOption;
 import net.minecraft.text.Text;
 
+import java.lang.reflect.Array;
+
 @Environment(EnvType.CLIENT)
 public class WorldOptionsScreen extends GameOptionsScreen {
    public static final Text TITLE_TEXT = Text.translatable("optilite.options.worldTitle");
@@ -23,9 +25,9 @@ public class WorldOptionsScreen extends GameOptionsScreen {
               // fog
               GameOptionsOL.getCloudsHeight(),
               // fog start
-              // sun & moon
-              // stars
-              GameOptionsOL.getSkyEnabled(),
+              GameOptionsOL.getSunMoon(),
+              GameOptionsOL.getStars(),
+              GameOptionsOL.getSky(),
               // swamp colors
               // rain & snow
               // better snow

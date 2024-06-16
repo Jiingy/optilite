@@ -1,6 +1,7 @@
 package net.jineric.optilite.mixin.options;
 
 import net.jineric.optilite.config.ConfigOF;
+import net.jineric.optilite.option.GameOptionsOL;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.WorldRenderer;
 import net.minecraft.resource.SynchronousResourceReloader;
@@ -19,7 +20,7 @@ public abstract class SkyEnabledMixin implements SynchronousResourceReloader, Au
            cancellable = true
    )
    private void renderSkyIfEnabled(Matrix4f matrix4f, Matrix4f projectionMatrix, float tickDelta, Camera camera, boolean thickFog, Runnable fogCallback, CallbackInfo ci) {
-      if (!ConfigOF.isSkyEnabled()) {
+      if (!GameOptionsOL.getSky().getValue()) {
          ci.cancel();
       }
    }

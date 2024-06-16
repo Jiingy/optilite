@@ -1,13 +1,17 @@
 package net.jineric.optilite.config;
 
 import net.jineric.optilite.option.GameOptionsOL;
+import net.minecraft.client.option.SimpleOption;
 
 public class ConfigOF {
+
    // Options
-   private static boolean SKY_ENABLED = GameOptionsOL.getSky().getValue();
+   private static final boolean SKY_ENABLED = GameOptionsOL.getSky().getValue();
+
    // Particles
    private static final boolean EXPLOSION_PARTICLES = true;
 
+   //ETC
    private static boolean MODIFY_OPTION_SCREENS = true;
    private static boolean OLD_OPTIONS_LAYOUT = false;
    private static boolean NEW_OPTIONS_LAYOUT = true;
@@ -35,16 +39,4 @@ public class ConfigOF {
    public static void setNewOptionsLayout(boolean newOptionsLayout) {
       NEW_OPTIONS_LAYOUT = newOptionsLayout;
    }
-
-   public static boolean isSkyEnabled() {
-      return SKY_ENABLED;
-   }
-
-   public static void setSkyEnabled(boolean skyEnabled) {
-      SKY_ENABLED = skyEnabled;
-   }
-
-//   public static void setDefaultValues() {
-//      SKY_ENABLED = ;
-//   }
 }

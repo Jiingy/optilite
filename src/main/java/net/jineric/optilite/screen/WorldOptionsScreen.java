@@ -22,7 +22,8 @@ public class WorldOptionsScreen extends GameOptionsScreen {
    private static SimpleOption<?>[] getOptions(GameOptions gameOptions) {
       return new SimpleOption[] {
               gameOptions.getCloudRenderMode(),
-              // fog
+              // TODO: Add variable fog level
+              GameOptionsOL.getFog(),
               GameOptionsOL.getCloudsHeight(),
               // fog start
               GameOptionsOL.getSunMoon(),

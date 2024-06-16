@@ -13,6 +13,7 @@
    "optilite.options.animationsTitle": "Animations Settings",
    "optilite.options.otherTitle": "Other Settings",
 
+   "optilite.options.fog": "Fog",
    "optilite.options.cloudHeight": "Cloud Height",
    "optilite.options.sky": "Sky",
    "optilite.options.sunMoon": "Sun & Moon",

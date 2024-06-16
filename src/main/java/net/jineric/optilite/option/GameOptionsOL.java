@@ -20,6 +20,12 @@ public class GameOptionsOL {
       return ADVANCED_TOOLTIPS;
    }
 
+   private static final Text FOG_TEXT = Text.translatable("optilite.options.fog");
+   private static final SimpleOption<Boolean> FOG = SimpleOption.ofBoolean(FOG_TEXT.getString(), true);
+   public static SimpleOption<Boolean> getFog() {
+      return FOG;
+   }
+
    private static final Text CLOUD_HEIGHT_TEXT = Text.translatable("optilite.options.cloudHeight");
    private static final SimpleOption<Double> CLOUD_HEIGHT = new SimpleOption<>(
            "optilite.options.cloudHeight",
@@ -55,7 +61,6 @@ public class GameOptionsOL {
 
 //   private static final Text _PARTICLE = Text.translatable("optilite.options.particle.");
 //   private static final SimpleOption<Boolean> ParticlesEnabled = SimpleOption.ofBoolean(_PARTICLE.getString(), true);
-
 // PARTICLE OPTIONS
    private static final Text ANGRY_VILLAGER_PARTICLE = Text.translatable("optilite.options.particle.angryVillager");
    private static final SimpleOption<Boolean> angryVillagerParticlesEnabled = SimpleOption.ofBoolean(ANGRY_VILLAGER_PARTICLE.getString(), true);

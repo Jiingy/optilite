@@ -9,10 +9,12 @@
 	  "ZoomMixin",
 	  "accessors.GameOptionsAccessors",
 	  "options.CloudsHeightMixin",
-	  "options.ParticleTogglesMixin",
-	  "options.SkyToggleMixin",
-	  "options.StarsToggleMixin",
-	  "options.SunMoonToggleMixin",
+	  "options.toggle.BackgroundFogToggle",
+	  "options.toggle.TerrainFogToggleMixin",
+	  "options.toggle.ParticleTogglesMixin",
+	  "options.toggle.SkyToggleMixin",
+	  "options.toggle.StarsToggleMixin",
+	  "options.toggle.SunMoonToggleMixin",
 	  "screen.VideoOptionsScreenMixin"
    ],
    "injectors": {

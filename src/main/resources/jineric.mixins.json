@@ -10,7 +10,7 @@
 	  "accessors.GameOptionsAccessors",
 	  "options.CloudsHeightMixin",
 	  "options.ParticleTogglesMixin",
-	  "options.SkyEnabledMixin",
+	  "options.SkyToggleMixin",
 	  "options.StarsToggleMixin",
 	  "options.SunMoonToggleMixin",
 	  "screen.VideoOptionsScreenMixin"

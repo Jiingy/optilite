@@ -1,6 +1,5 @@
 package net.jineric.optilite.mixin.options;
 
-import net.jineric.optilite.config.ConfigOF;
 import net.jineric.optilite.option.GameOptionsOL;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.WorldRenderer;
@@ -12,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(WorldRenderer.class)
-public abstract class SkyEnabledMixin implements SynchronousResourceReloader, AutoCloseable {
+public abstract class SkyToggleMixin implements SynchronousResourceReloader, AutoCloseable {
 
    @Inject(
            method = "renderSky(Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;FLnet/minecraft/client/render/Camera;ZLjava/lang/Runnable;)V",

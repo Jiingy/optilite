@@ -1,4 +1,4 @@
-package net.jineric.optilite.mixin.options;
+package net.jineric.optilite.mixin.options.toggle;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import net.jineric.optilite.option.GameOptionsOL;

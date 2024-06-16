@@ -1,4 +1,4 @@
-package net.jineric.optilite.mixin.options;
+package net.jineric.optilite.mixin.options.toggle;
 
 import net.jineric.optilite.option.ParticleOption;
 import net.minecraft.client.MinecraftClient;

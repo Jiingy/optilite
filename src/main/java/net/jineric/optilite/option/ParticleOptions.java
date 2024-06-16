@@ -15,7 +15,7 @@ public class ParticleOptions {
    public static ParticleOption DRAGON_BREATH = new ParticleOption(GameOptionsOL.getDragonsBreathParticlesEnabled(), ParticleTypes.DRAGON_BREATH);
    public static ParticleOption DRIPPING_LAVA = new ParticleOption(GameOptionsOL.getDrippingLavaParticlesEnabled(), ParticleTypes.DRIPPING_LAVA);
    public static ParticleOption LANDING_LAVA = new ParticleOption(GameOptionsOL.getLandingLavaParticlesEnabled(), ParticleTypes.LANDING_LAVA);
-   public static ParticleOption FALLING_WATER = new ParticleOption(GameOptionsOL.getFallingLavaParticlesEnabled(), ParticleTypes.FALLING_WATER);
+   public static ParticleOption FALLING_LAVA = new ParticleOption(GameOptionsOL.getFallingLavaParticlesEnabled(), ParticleTypes.FALLING_LAVA);
 //   public static ParticleOption DUST_COLOR_TRANSITION = new ParticleOption(GameOptionsOL.get);
 //   public static ParticleOption EFFECT = new ParticleOption(GameOptionsOL.get);
 //   public static ParticleOption ELDER_GUARDIAN = new ParticleOption(GameOptionsOL.get);

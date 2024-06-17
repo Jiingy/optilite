@@ -1,4 +1,4 @@
-package net.jineric.optilite.option;
+package net.jineric.optilite.client.option;
 
 import net.minecraft.text.Text;
 
@@ -17,4 +17,6 @@ public class GameOptionTooltips {
    protected static final Text ALTERNATE_BLOCKS_TOOLTIP = Text.translatable("optilite.options.alternateBlocks.tooltip");
    protected static final Text SMOOTH_LIGHTING_LEVEL_TOOLTIP = Text.translatable("optilite.options.smoothLightingLevel.tooltip");
    protected static final Text DYNAMIC_LIGHTS_RENDER_MODE = Text.translatable("optilite.options.dynamicLightsRenderMode.tooltip");
+
+   protected static final Text CLOUD_HEIGHT_TOOLTIP = Text.translatable("optilite.options.tooltip.cloudHeight");
 }

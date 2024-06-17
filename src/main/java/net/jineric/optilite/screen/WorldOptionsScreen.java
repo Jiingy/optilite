@@ -2,14 +2,12 @@ package net.jineric.optilite.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.jineric.optilite.option.GameOptionsOL;
+import net.jineric.optilite.client.option.GameOptionsOL;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.SimpleOption;
 import net.minecraft.text.Text;
-
-import java.lang.reflect.Array;
 
 @Environment(EnvType.CLIENT)
 public class WorldOptionsScreen extends GameOptionsScreen {

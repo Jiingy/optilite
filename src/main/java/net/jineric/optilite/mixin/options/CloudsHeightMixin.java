@@ -1,6 +1,6 @@
 package net.jineric.optilite.mixin.options;
 
-import net.jineric.optilite.option.GameOptionsOL;
+import net.jineric.optilite.client.option.GameOptionsOL;
 import net.minecraft.client.render.WorldRenderer;
 import net.minecraft.resource.SynchronousResourceReloader;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,4 +1,4 @@
-package net.jineric.optilite.option;
+package net.jineric.optilite.client.option;
 
 import net.minecraft.client.option.KeyBinding;
 import org.lwjgl.glfw.GLFW;

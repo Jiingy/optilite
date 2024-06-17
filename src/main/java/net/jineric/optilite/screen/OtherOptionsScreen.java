@@ -1,6 +1,6 @@
 package net.jineric.optilite.screen;
 
-import net.jineric.optilite.option.GameOptionsOL;
+import net.jineric.optilite.client.option.GameOptionsOL;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
 import net.minecraft.client.option.GameOptions;

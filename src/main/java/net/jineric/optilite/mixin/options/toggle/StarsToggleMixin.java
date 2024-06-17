@@ -1,7 +1,7 @@
 package net.jineric.optilite.mixin.options.toggle;
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
-import net.jineric.optilite.option.GameOptionsOL;
+import net.jineric.optilite.client.option.GameOptionsOL;
 import net.minecraft.client.gl.ShaderProgram;
 import net.minecraft.client.gl.VertexBuffer;
 import net.minecraft.client.render.WorldRenderer;

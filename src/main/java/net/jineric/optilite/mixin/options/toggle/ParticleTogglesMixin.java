@@ -1,6 +1,6 @@
 package net.jineric.optilite.mixin.options.toggle;
 
-import net.jineric.optilite.option.ParticleOption;
+import net.jineric.optilite.client.option.ParticleOption;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.render.Camera;

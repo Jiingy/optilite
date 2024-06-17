@@ -1,6 +1,5 @@
-package net.jineric.optilite.option;
+package net.jineric.optilite.client.option;
 
-import net.minecraft.particle.ParticleType;
 import net.minecraft.particle.ParticleTypes;
 
 public class ParticleOptions {

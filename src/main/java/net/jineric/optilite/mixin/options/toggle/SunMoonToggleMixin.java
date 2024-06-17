@@ -2,7 +2,7 @@ package net.jineric.optilite.mixin.options.toggle;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import net.jineric.optilite.option.GameOptionsOL;
+import net.jineric.optilite.client.option.GameOptionsOL;
 import net.minecraft.client.render.*;
 import net.minecraft.resource.SynchronousResourceReloader;
 import org.joml.Matrix4f;

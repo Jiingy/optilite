@@ -1,5 +1,7 @@
 package net.jineric.optilite.mixin.options;
 
+import net.jineric.optilite.client.option.FogType;
+import net.jineric.optilite.client.option.GameOptionsOL;
 import net.minecraft.client.render.BackgroundRenderer;
 import net.minecraft.client.render.FogShape;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,7 +19,12 @@ public abstract class FogTypeMixin {
            )
    )
    private static FogShape setFogTypeFromOption(FogShape shaderFogShape) {
-
-      return shaderFogShape;
+      if (GameOptionsOL.getFogType().getValue() == FogType.SPHERE) {
+         return FogShape.SPHERE;
+      } else if (GameOptionsOL.getFogType().getValue() == FogType.CYLINDER) {
+         return FogShape.CYLINDER;
+      } else {
+         return shaderFogShape;
+      }
    }
 }

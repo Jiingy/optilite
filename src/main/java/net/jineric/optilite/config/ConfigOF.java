@@ -1,7 +1,6 @@
 package net.jineric.optilite.config;
 
-import net.jineric.optilite.option.GameOptionsOL;
-import net.minecraft.client.option.SimpleOption;
+import net.jineric.optilite.client.option.GameOptionsOL;
 
 public class ConfigOF {
 

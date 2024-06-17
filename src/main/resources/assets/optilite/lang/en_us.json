@@ -14,13 +14,36 @@
    "optilite.options.otherTitle": "Other Settings",
 
    "optilite.options.fog": "Fog",
+   "optilite.options.fogShape": "Fog Shape",
+   "optilite.options.fogShape.default": "Default",
+   "optilite.options.fogShape.cylinder": "Cylinder",
+   "optilite.options.fogShape.sphere": "Sphere",
+   "optilite.options.fogDistance": "Fog Distance",
+   "optilite.options.fogDistance.nearby": "Nearby",
+   "optilite.options.fogDistance.close": "Close",
+   "optilite.options.fogDistance.far": "Far",
+   "optilite.options.fogDistance.distant": "Distant",
+   "optilite.options.fogDistance.default": "Default",
    "optilite.options.cloudHeight": "Cloud Height",
    "optilite.options.sky": "Sky",
    "optilite.options.sunMoon": "Sun & Moon",
    "optilite.options.stars": "Stars",
+
    "optilite.options.particle.angryVillager": "Angry Villager",
    "optilite.options.particle.block": "Block",
+   "optilite.options.particle.blockMarker": "Block Marker",
    "optilite.options.particle.bubble": "Bubble",
+   "optilite.options.particle.cloud": "Cloud",
+   "optilite.options.particle.crit": "Crit",
+   "optilite.options.particle.damageIndicator": "Damage Indicator",
+   "optilite.options.particle.dragonsBreath": "Dragon's Breath",
+   "optilite.options.particle.drippingLava": "Dripping Lava",
+   "optilite.options.particle.landingLava": "Landing Lava",
+   "optilite.options.particle.fallingLava": "Falling Lava",
    "optilite.options.particle.explosion": "Explosion",
-   "optilite.options.particle.smoke": "Smoke"
+   "optilite.options.particle.smoke": "Smoke",
+
+   "optilite.options.tooltip.cloudHeight": "Height of clouds relative to their normal value.",
+   "optilite.options.tooltip.fogShape": "Changes the world's fog shape regardless of the current dimension or biome.\n(More noticeable vertically)",
+   "optilite.options.tooltip.fogDistance": "Changes how far terrain fog starts from the player."
 }

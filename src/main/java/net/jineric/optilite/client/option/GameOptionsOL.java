@@ -1,5 +1,6 @@
-package net.jineric.optilite.option;
+package net.jineric.optilite.client.option;
 
+import com.mojang.serialization.Codec;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.jineric.optilite.mixin.accessors.GameOptionsAccessors;
@@ -8,6 +9,10 @@ import net.minecraft.client.option.SimpleOption;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.MathHelper;
+
+import java.util.Arrays;
+
+import static net.jineric.optilite.client.option.GameOptionTooltips.*;
 
 @Environment(EnvType.CLIENT)
 public class GameOptionsOL {
@@ -26,10 +31,40 @@ public class GameOptionsOL {
       return FOG;
    }
 
+   // FOG TYPE -- DEFAULT / CYL / SPHERE
+   private static final Text FOG_TYPE_TEXT = Text.translatable("optilite.options.fogShape");
+   private static final SimpleOption<FogType> FOG_TYPE = new SimpleOption<>(
+           FOG_TYPE_TEXT.getString(),
+           SimpleOption.constantTooltip(FOG_TYPE_TOOLTIP),
+           SimpleOption.enumValueText(),
+           new SimpleOption.PotentialValuesBasedCallbacks<>(Arrays.asList(FogType.values()), Codec.INT.xmap(FogType::byId, FogType::getId)),
+           FogType.DEFAULT,
+           consumer -> {}
+   );
+   public static SimpleOption<FogType> getFogType() {
+      return FOG_TYPE;
+   }
+   // FOG -- ON / OFF / SKY / TERRAIN
+
+   // FOG DISTANCE
+   private static final Text FOG_DISTANCE_TEXT = Text.translatable("optilite.options.fogDistance");
+   private static final SimpleOption<FogDistance> FOG_DISTANCE = new SimpleOption<>(
+           FOG_DISTANCE_TEXT.getString(),
+           SimpleOption.constantTooltip(FOG_DISTANCE_TOOLTIP),
+           SimpleOption.enumValueText(),
+           new SimpleOption.PotentialValuesBasedCallbacks<>(Arrays.asList(FogDistance.values()), Codec.INT.xmap(FogDistance::byId, FogDistance::getId)),
+           FogDistance.DEFAULT,
+           consumer -> {}
+   );
+   public static SimpleOption<FogDistance> getFogDistance() {
+      return FOG_DISTANCE;
+   }
+
+
    private static final Text CLOUD_HEIGHT_TEXT = Text.translatable("optilite.options.cloudHeight");
    private static final SimpleOption<Double> CLOUD_HEIGHT = new SimpleOption<>(
-           "optilite.options.cloudHeight",
-           SimpleOption.constantTooltip(CLOUD_HEIGHT_TEXT),
+           CLOUD_HEIGHT_TEXT.getString(),
+           SimpleOption.constantTooltip(CLOUD_HEIGHT_TOOLTIP),
            (optionText, value) -> value == 0.0
                    ? GameOptions.getGenericValueText(optionText, ScreenTexts.OFF)
                    : GameOptionsAccessors.getPercentValueText(optionText, value),

@@ -16,7 +16,6 @@ import static net.jineric.optilite.client.option.GameOptionTooltips.*;
 
 @Environment(EnvType.CLIENT)
 public class GameOptionsOL {
-// private static final Text  = Text.translatable("optilite.options..tooltip");
 
    // TODO: Tie-in with GameOptions.getAdvancedTooltips
    private static final Text ADVANCED_TOOLTIPS_TEXT = Text.translatable("optilite.options.advancedTooltips");
@@ -25,10 +24,17 @@ public class GameOptionsOL {
       return ADVANCED_TOOLTIPS;
    }
 
-   private static final Text FOG_TEXT = Text.translatable("optilite.options.fog");
-   private static final SimpleOption<Boolean> FOG = SimpleOption.ofBoolean(FOG_TEXT.getString(), true);
-   public static SimpleOption<Boolean> getFog() {
-      return FOG;
+   private static final Text FOG_MODE_TEXT = Text.translatable("optilite.options.fogMode");
+   private static final SimpleOption<FogMode> FOG_MODE = new SimpleOption<>(
+           FOG_MODE_TEXT.getString(),
+           SimpleOption.constantTooltip(FOG_MODE_TOOLTIP),
+           SimpleOption.enumValueText(),
+           new SimpleOption.PotentialValuesBasedCallbacks<>(Arrays.asList(FogMode.values()), Codec.INT.xmap(FogMode::byId, FogMode::getId)),
+           FogMode.ON,
+           fogMode -> {}
+   );
+   public static SimpleOption<FogMode> getFogMode() {
+      return FOG_MODE;
    }
 
    // FOG TYPE -- DEFAULT / CYL / SPHERE
@@ -76,20 +82,20 @@ public class GameOptionsOL {
    }
 
    private static final Text SKY_TEXT = Text.translatable("optilite.options.sky");
-   private static final SimpleOption<Boolean> SKY = SimpleOption.ofBoolean(SKY_TEXT.getString(), true);
+   private static final SimpleOption<Boolean> SKY = SimpleOption.ofBoolean(SKY_TEXT.getString(), SimpleOption.constantTooltip(SKY_TOOLTIP), true);
    public static SimpleOption<Boolean> getSky() {
       return SKY;
    }
 
    // TODO: SPLIT INTO SEPARATE SETTINGS?
    private static final Text SUN_MOON_TEXT = Text.translatable("optilite.options.sunMoon");
-   private static final SimpleOption<Boolean> SUN_MOON = SimpleOption.ofBoolean(SUN_MOON_TEXT.getString(), true);
+   private static final SimpleOption<Boolean> SUN_MOON = SimpleOption.ofBoolean(SUN_MOON_TEXT.getString(), SimpleOption.constantTooltip(SUN_MOON_TOOLTIP), true);
    public static SimpleOption<Boolean> getSunMoon() {
       return SUN_MOON;
    }
 
    private static final Text STARS_TEXT = Text.translatable("optilite.options.stars");
-   private static final SimpleOption<Boolean> STARS = SimpleOption.ofBoolean(STARS_TEXT.getString(), true);
+   private static final SimpleOption<Boolean> STARS = SimpleOption.ofBoolean(STARS_TEXT.getString(), SimpleOption.constantTooltip(STARS_TOOLTIP), true);
    public static SimpleOption<Boolean> getStars() {
       return STARS;
    }

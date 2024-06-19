@@ -13,7 +13,11 @@
    "optilite.options.animationsTitle": "Animations Settings",
    "optilite.options.otherTitle": "Other Settings",
 
-   "optilite.options.fog": "Fog",
+   "optilite.options.fogMode": "Fog",
+   "optilite.options.fogMode.on": "ON",
+   "optilite.options.fogMode.terrain": "Terrain",
+   "optilite.options.fogMode.sky": "Sky",
+   "optilite.options.fogMode.off": "OFF",
    "optilite.options.fogShape": "Fog Shape",
    "optilite.options.fogShape.default": "Default",
    "optilite.options.fogShape.cylinder": "Cylinder",
@@ -43,7 +47,11 @@
    "optilite.options.particle.explosion": "Explosion",
    "optilite.options.particle.smoke": "Smoke",
 
-   "optilite.options.tooltip.cloudHeight": "Height of clouds relative to their normal value.",
-   "optilite.options.tooltip.fogShape": "Changes the world's fog shape regardless of the current dimension or biome.\n(More noticeable vertically)",
-   "optilite.options.tooltip.fogDistance": "Changes how far terrain fog starts from the player."
+   "optilite.options.tooltip.fogMode": "Fog Mode\nChoose what kind of fog to render, or disable it entirely.\n(Recommended: ON or Sky)",
+   "optilite.options.tooltip.fogShape": "Fog Shape\nChanges the shape of terrain fog regardless of the current dimension or biome.\n(Most noticeable in vertical directions)",
+   "optilite.options.tooltip.fogDistance": "Fog Distance\nChanges how far terrain fog starts from the player.",
+   "optilite.options.tooltip.cloudHeight": "CloudHeight\nIncrease the height of clouds.",
+   "optilite.options.tooltip.sunMoon": "Enable/Disable the sun and moon.",
+   "optilite.options.tooltip.stars": "Enable/Disable the nighttime stars.",
+   "optilite.options.tooltip.sky": "Enable/Disable the sky.\n(The sun & moon can still be visible)"
 }

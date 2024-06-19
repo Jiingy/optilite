@@ -24,20 +24,20 @@ public abstract class ZoomMixin implements AutoCloseable {
 //      }
 //
 //      if (zoomActive) {
-//         if (!ConfigOF.IS_ZOOM) {
-//            ConfigOF.IS_ZOOM = true;
+//         if (!ConfigOL.IS_ZOOM) {
+//            ConfigOL.IS_ZOOM = true;
 ////            Config.zoomSmoothCamera = this.minecraft.options.smoothCamera;
 ////            this.minecraft.options.smoothCamera = true;
 ////            this.client.gameRenderer.;
 //         }
 //
-//         if (ConfigOF.IS_ZOOM) {
+//         if (ConfigOL.IS_ZOOM) {
 ////            d0 /= 4.0;
 //            float fov = this.client.options.getFov().getValue();
 //            this.fovMultiplier /= 4.0;
 //         }
-//      } else if (ConfigOF.IS_ZOOM) {
-//         ConfigOF.IS_ZOOM = false;
+//      } else if (ConfigOL.IS_ZOOM) {
+//         ConfigOL.IS_ZOOM = false;
 ////         this.minecraft.options.smoothCamera = Config.zoomSmoothCamera;
 ////         this.client.gameRenderer.needsUpdate();
 //      }

@@ -2,7 +2,7 @@ package net.jineric.optilite.config;
 
 import net.jineric.optilite.client.option.GameOptionsOL;
 
-public class ConfigOF {
+public class ConfigOL {
 
    // Options
    private static final boolean SKY_ENABLED = GameOptionsOL.getSky().getValue();
@@ -14,6 +14,7 @@ public class ConfigOF {
    private static boolean MODIFY_OPTION_SCREENS = true;
    private static boolean OLD_OPTIONS_LAYOUT = false;
    private static boolean NEW_OPTIONS_LAYOUT = true;
+   private static boolean VANILLA_TOOLTIPS = true;
 
    public static boolean isModifyOptionScreens() {
       return MODIFY_OPTION_SCREENS;
@@ -37,5 +38,13 @@ public class ConfigOF {
 
    public static void setNewOptionsLayout(boolean newOptionsLayout) {
       NEW_OPTIONS_LAYOUT = newOptionsLayout;
+   }
+
+   public static boolean isVanillaTooltips() {
+      return VANILLA_TOOLTIPS;
+   }
+
+   public static void setVanillaTooltips(boolean vanillaTooltips) {
+      VANILLA_TOOLTIPS = vanillaTooltips;
    }
 }

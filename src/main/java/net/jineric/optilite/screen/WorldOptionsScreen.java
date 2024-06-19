@@ -21,7 +21,7 @@ public class WorldOptionsScreen extends GameOptionsScreen {
       return new SimpleOption[] {
               gameOptions.getCloudRenderMode(),
               // TODO: Add variable fog level
-              GameOptionsOL.getFog(),
+              GameOptionsOL.getFogMode(),
               GameOptionsOL.getFogType(),
               GameOptionsOL.getFogDistance(),
               GameOptionsOL.getCloudsHeight(),

@@ -6,12 +6,13 @@
    "mixins": [
    ],
    "client": [
+	  "AddGameOptionTooltipsMixin",
 	  "ZoomMixin",
 	  "accessors.GameOptionsAccessors",
 	  "options.CloudsHeightMixin",
 	  "options.FogDistanceMixin",
+	  "options.FogModeMixin",
 	  "options.FogTypeMixin",
-	  "options.toggle.BackgroundFogToggle",
 	  "options.toggle.ParticleTogglesMixin",
 	  "options.toggle.SkyToggleMixin",
 	  "options.toggle.StarsToggleMixin",

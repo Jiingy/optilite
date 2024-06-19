@@ -3,7 +3,7 @@ package net.jineric.optilite.mixin.screen;
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import net.jineric.optilite.config.ConfigOF;
+import net.jineric.optilite.config.ConfigOL;
 import net.jineric.optilite.screen.AnimationsOptionsScreen;
 import net.jineric.optilite.screen.OtherOptionsScreen;
 import net.jineric.optilite.screen.PlayerOptionsScreen;
@@ -79,7 +79,7 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
            ordinal = 1)
    )
    private boolean removeBiomeBlendButtonIfDisabled(OptionListWidget instance, SimpleOption<?> option) {
-      return !ConfigOF.isModifyOptionScreens();
+      return !ConfigOL.isModifyOptionScreens();
    }
 
    @WrapOperation(
@@ -87,8 +87,8 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/widget/OptionListWidget;addAll([Lnet/minecraft/client/option/SimpleOption;)V")
    )
    protected void replaceVideoOptionsWithOptiFineLayout(OptionListWidget instance, SimpleOption<?>[] options, Operation<Void> original) {
-      if (ConfigOF.isModifyOptionScreens()) {
-         if (ConfigOF.isNewOptionsLayout()) {
+      if (ConfigOL.isModifyOptionScreens()) {
+         if (ConfigOL.isNewOptionsLayout()) {
             instance.addAll(this.newVideoOptionsLayoutOF);
             instance.addWidgetEntry(
                     ButtonWidget.builder(WORLD_TEXT, button -> this.client.setScreen(new WorldOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
@@ -103,7 +103,7 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
 //                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new PERFORMANCE((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
 //            );
          }
-         else if (ConfigOF.isOldOptionsLayout()) {
+         else if (ConfigOL.isOldOptionsLayout()) {
             instance.addAll(this.oldVideoOptionsLayoutOF);
 //            instance.addWidgetEntry(
 //                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new SHADER((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),

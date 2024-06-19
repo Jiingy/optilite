@@ -1,0 +1,7 @@
+{
+   "options.tooltip.clouds.fancy": "Renders clouds as translucent 3D cubes.",
+   "options.tooltip.clouds.fast": "Renders clouds as flat 2D planes.",
+   "options.tooltip.clouds.off": "Disables clouds from rendering.",
+   "options.tooltip.entityShadows": "Enable/Disable entity shadows.",
+   "options.tooltip.ao": "Enable/Disable smooth lighting.."
+}

@@ -3,14 +3,6 @@ package net.jineric.optilite.config;
 import net.jineric.optilite.client.option.GameOptionsOL;
 
 public class ConfigOL {
-
-   // Options
-   private static final boolean SKY_ENABLED = GameOptionsOL.getSky().getValue();
-
-   // Particles
-   private static final boolean EXPLOSION_PARTICLES = true;
-
-   //ETC
    private static boolean MODIFY_OPTION_SCREENS = true;
    private static boolean OLD_OPTIONS_LAYOUT = false;
    private static boolean NEW_OPTIONS_LAYOUT = true;

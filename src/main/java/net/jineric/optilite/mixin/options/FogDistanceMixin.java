@@ -24,13 +24,13 @@ public abstract class FogDistanceMixin {
    )
    private static float setFogDistanceFromOption(float shaderFogStart) {
       if (GameOptionsOL.getFogDistance().getValue() == FogDistance.NEARBY) {
-         return shaderFogStart * 0.1f;
+         return shaderFogStart * 0.025f;
       } else if (GameOptionsOL.getFogDistance().getValue() == FogDistance.CLOSE) {
          return shaderFogStart * 0.2f;
       } else if (GameOptionsOL.getFogDistance().getValue() == FogDistance.FAR) {
-         return shaderFogStart * 0.4f;
+         return shaderFogStart * 0.35f;
       } else if (GameOptionsOL.getFogDistance().getValue() == FogDistance.DISTANT) {
-         return shaderFogStart * 0.8f;
+         return shaderFogStart * 0.6f;
       } else {
          return shaderFogStart;
       }

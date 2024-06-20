@@ -19,6 +19,7 @@ public abstract class SkyToggleMixin implements SynchronousResourceReloader, Aut
            cancellable = true
    )
    private void renderSkyIfEnabled(Matrix4f matrix4f, Matrix4f projectionMatrix, float tickDelta, Camera camera, boolean thickFog, Runnable fogCallback, CallbackInfo ci) {
+      // Poor implementation currently. Method is entirely canceled which is bad on its own, but also disables other sky rendering like fog.
       if (!GameOptionsOL.getSky().getValue()) {
          ci.cancel();
       }

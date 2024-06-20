@@ -4,7 +4,7 @@ import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.jineric.optilite.config.ConfigOL;
-import net.jineric.optilite.screen.AnimationsOptionsScreen;
+import net.jineric.optilite.screen.animations.AnimationOptionsScreen;
 import net.jineric.optilite.screen.OtherOptionsScreen;
 import net.jineric.optilite.screen.PlayerOptionsScreen;
 import net.jineric.optilite.screen.WorldOptionsScreen;
@@ -24,10 +24,10 @@ import org.spongepowered.asm.mixin.injection.At;
 public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
    private static final Text TEMP_BUTTON_TEXT = Text.translatable("Temp...");
 
-   private static final Text ANIMATIONS_TEXT = Text.translatable("optilite.options.animations");
-   private static final Text OTHER_TEXT = Text.translatable("optilite.options.other");
-   private static final Text PLAYER_TEXT = Text.translatable("optilite.options.player");
-   private static final Text WORLD_TEXT = Text.translatable("optilite.options.world");
+   @Unique private static final Text ANIMATIONS_TEXT = Text.translatable("optilite.options.animations");
+   @Unique private static final Text OTHER_TEXT = Text.translatable("optilite.options.other");
+   @Unique private static final Text PLAYER_TEXT = Text.translatable("optilite.options.player");
+   @Unique private static final Text WORLD_TEXT = Text.translatable("optilite.options.world");
 
 
    public VideoOptionsScreenMixin(Screen parent, GameOptions gameOptions, Text title) {
@@ -91,12 +91,12 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
          if (ConfigOL.isNewOptionsLayout()) {
             instance.addAll(this.newVideoOptionsLayoutOF);
             instance.addWidgetEntry(
-                    ButtonWidget.builder(WORLD_TEXT, button -> this.client.setScreen(new WorldOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
-                    ButtonWidget.builder(PLAYER_TEXT, button -> this.client.setScreen(new PlayerOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
+                    ButtonWidget.builder(WORLD_TEXT, _ -> this.client.setScreen(new WorldOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
+                    ButtonWidget.builder(PLAYER_TEXT, _ -> this.client.setScreen(new PlayerOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
             );
             instance.addWidgetEntry(
-                    ButtonWidget.builder(ANIMATIONS_TEXT, button -> this.client.setScreen(new AnimationsOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
-                    ButtonWidget.builder(OTHER_TEXT, button -> this.client.setScreen(new OtherOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
+                    ButtonWidget.builder(ANIMATIONS_TEXT, _ -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
+                    ButtonWidget.builder(OTHER_TEXT, _ -> this.client.setScreen(new OtherOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
             );
 //            instance.addWidgetEntry(
 //                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new SHADER((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
@@ -114,8 +114,8 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
 //                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new PERFORMANCE((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
 //            );
             instance.addWidgetEntry(
-                    ButtonWidget.builder(ANIMATIONS_TEXT, button -> this.client.setScreen(new AnimationsOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
-                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new AnimationsOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
+                    ButtonWidget.builder(ANIMATIONS_TEXT, _ -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
+                    ButtonWidget.builder(TEMP_BUTTON_TEXT, _ -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
             );
          }
       } else {

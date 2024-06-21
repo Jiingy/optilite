@@ -91,12 +91,12 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
          if (ConfigOL.isNewOptionsLayout()) {
             instance.addAll(this.newVideoOptionsLayoutOF);
             instance.addWidgetEntry(
-                    ButtonWidget.builder(WORLD_TEXT, _ -> this.client.setScreen(new WorldOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
-                    ButtonWidget.builder(PLAYER_TEXT, _ -> this.client.setScreen(new PlayerOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
+                    ButtonWidget.builder(WORLD_TEXT, widget -> this.client.setScreen(new WorldOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
+                    ButtonWidget.builder(PLAYER_TEXT, widget -> this.client.setScreen(new PlayerOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
             );
             instance.addWidgetEntry(
-                    ButtonWidget.builder(ANIMATIONS_TEXT, _ -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
-                    ButtonWidget.builder(OTHER_TEXT, _ -> this.client.setScreen(new OtherOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
+                    ButtonWidget.builder(ANIMATIONS_TEXT, widget -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
+                    ButtonWidget.builder(OTHER_TEXT, widget -> this.client.setScreen(new OtherOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
             );
 //            instance.addWidgetEntry(
 //                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new SHADER((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
@@ -114,8 +114,8 @@ public abstract class VideoOptionsScreenMixin extends GameOptionsScreen {
 //                    ButtonWidget.builder(TEMP_BUTTON_TEXT, button -> this.client.setScreen(new PERFORMANCE((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
 //            );
             instance.addWidgetEntry(
-                    ButtonWidget.builder(ANIMATIONS_TEXT, _ -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
-                    ButtonWidget.builder(TEMP_BUTTON_TEXT, _ -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
+                    ButtonWidget.builder(ANIMATIONS_TEXT, widget -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build(),
+                    ButtonWidget.builder(TEMP_BUTTON_TEXT, widget -> this.client.setScreen(new AnimationOptionsScreen((VideoOptionsScreen)(Object)this, this.gameOptions))).build()
             );
          }
       } else {

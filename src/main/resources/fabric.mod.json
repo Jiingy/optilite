@@ -11,14 +11,16 @@
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-
   "license": "CC0-1.0",
   "icon": "assets/optilite/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
 	   "net.jineric.optilite.OptiLite"
+    ],
+
+    "fabric-datagen": [
+      "net.jineric.optilite.data.DataGenerationOL"
     ]
   },
   "mixins": [

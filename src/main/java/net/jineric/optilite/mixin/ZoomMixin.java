@@ -8,8 +8,11 @@ import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(GameRenderer.class)
 public abstract class ZoomMixin implements AutoCloseable {
-   @Shadow @Final MinecraftClient client;
-   @Shadow private float fovMultiplier;
+	@Shadow
+	@Final
+	MinecraftClient client;
+	@Shadow
+	private float fovMultiplier;
 
 //   @Inject(method = "getFov",
 //           at = @At(value = "INVOKE",

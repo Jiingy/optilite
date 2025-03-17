@@ -1,3 +1,8 @@
 accessWidener v1 named
 # Widened SimpleOption$Callbacks for mixin AddGameOptionTooltip
 accessible class net/minecraft/client/option/SimpleOption$Callbacks
+# Widened for FogModeMixin.class
+accessible class net/minecraft/client/render/BackgroundRenderer$FogData
+# For GameOptions.accept()
+accessible class net/minecraft/client/option/GameOptions$Visitor
+accessible class net/minecraft/client/option/GameOptions$OptionVisitor

@@ -6,21 +6,24 @@
    "mixins": [
    ],
    "client": [
-	  "AddGameOptionTooltipsMixin",
-	  "ZoomMixin",
-	  "accessors.GameOptionsAccessors",
-	  "options.CloudsHeightMixin",
-	  "options.FogDistanceMixin",
-	  "options.FogModeMixin",
-	  "options.FogTypeMixin",
-	  "options.toggle.ParticleTogglesMixin",
-	  "options.toggle.SkyToggleMixin",
-	  "options.toggle.StarsToggleMixin",
-	  "options.toggle.SunMoonToggleMixin",
-	  "options.toggle.TerrainFogToggleMixin",
-	  "screen.VideoOptionsScreenMixin"
+      "AddGameOptionTooltipsMixin",
+      "ModifyFrameRateOption",
+      "ZoomMixin",
+      "accessors.GameOptionsAccessors",
+      "options.AcceptOptionsOLMixin",
+      "options.CloudsHeightMixin",
+      "options.FogDistanceMixin",
+      "options.FogModeMixin",
+      "options.FogTypeMixin",
+      "options.toggle.MoonToggleMixin",
+      "options.toggle.ParticleTogglesMixin",
+      "options.toggle.SkyToggleMixin",
+      "options.toggle.StarsToggleMixin",
+      "options.toggle.SunToggleMixin",
+      "options.toggle.TerrainFogToggleMixin",
+      "screen.VideoOptionsScreenMixin"
    ],
    "injectors": {
-	  "defaultRequire": 1
+      "defaultRequire": 1
    }
 }

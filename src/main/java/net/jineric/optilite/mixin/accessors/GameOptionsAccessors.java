@@ -7,9 +7,9 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(GameOptions.class)
 public interface GameOptionsAccessors {
-
-   @Invoker("getPercentValueText")
-   static  Text getPercentValueText(Text prefix, double value) {
-      throw new AssertionError();
-   }
+	
+	@Invoker("getPercentValueText")
+	static Text getPercentValueText(Text prefix, double value) {
+		throw new AssertionError();
+	}
 }
